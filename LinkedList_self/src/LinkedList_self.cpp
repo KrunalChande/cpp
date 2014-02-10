@@ -53,6 +53,7 @@ void deleteElement(list_node* header, int data)
 		if(curr->data == data)
 		{
 			temp->ptr = curr->ptr;
+			delete curr;
 			curr = temp;
 		}
 		temp = curr;
